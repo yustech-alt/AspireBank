@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* grid reuse */
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  border: none;
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  /* display: block; */
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/****** HEADER Section *******/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  background-color: #163300;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Poppins", serif;
+}
+
+.logo span {
+  color: #9fe870;
+}
+
+.nav {
+  display: flex;
+  gap: 4.6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-out;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #9fe870;
+}
+
+.register-box {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.login--link:link,
+.login--link:visited {
+  background-color: #9fe870;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 3rem;
+}
+
+.login--link:hover,
+.login--link:active {
+  background-color: transparent;
+
+  color: white;
+}
+
+.sign--in--link:link,
+.sign--in--link:visited {
+  background-color: transparent;
+}
+
+.sign--in--link:hover,
+.sign--in--link:active {
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+/******* Hero-section ********/
+
+.Hero-section {
+  background-color: #163300;
+  padding: 2.8rem 2rem 3rem 1.2rem;
+  height: 90vh;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 114rem;
+  margin: 0 auto;
+  gap: 3.6rem;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #999;
+  margin-bottom: 4.2rem;
+}
+
+.btn--GST {
+  background-color: #9fe870;
+  color: #000;
+  font-weight: 800;
+}
+
+.hero-img img {
+  width: 100%;
+}
