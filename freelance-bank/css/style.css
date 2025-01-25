@@ -16,12 +16,16 @@ body {
 
 /* grid reuse */
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
+  margin-bottom: 4.6rem;
 }
 
 .grid {
   display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2--col {
@@ -40,6 +44,41 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  letter-spacing: -0.3rem;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+  color: #d0d6cc;
+}
+
+.heading-secondary {
+  font-size: 4.6rem;
+  line-height: 1.2;
+  margin-bottom: 6.4rem;
+  color: #0f2400;
+}
+
+.subheading {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #0b1a00;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.4rem;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
 }
 /****** HEADER Section *******/
 
@@ -106,13 +145,13 @@ body {
   background-color: transparent;
 }
 
-.sign--in--link:hover,
+/* .sign--in--link:hover,
 .sign--in--link:active {
   background-color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 3rem;
   border: none;
-}
+} */
 
 /******* Hero-section ********/
 
@@ -120,6 +159,12 @@ body {
   background-color: #163300;
   padding: 2.8rem 2rem 3rem 1.2rem;
   height: 90vh;
+  margin-bottom: 3rem;
+}
+
+.container2 {
+  max-width: 130rem;
+  margin: 0 auto;
 }
 
 .hero {
@@ -133,28 +178,44 @@ body {
   gap: 3.6rem;
 }
 
-.heading-primary {
-  font-size: 6rem;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.2rem;
-  margin-bottom: 3.2rem;
-  color: #fff;
-}
-
 .hero-description {
   font-size: 1.8rem;
   line-height: 1.8;
-  color: #999;
+  color: #d0d6cc;
   margin-bottom: 4.2rem;
 }
 
 .btn--GST {
   background-color: #9fe870;
-  color: #000;
+  color: #091400;
   font-weight: 800;
 }
 
 .hero-img img {
   width: 100%;
+}
+
+/******* Feature Section *******/
+
+.feature-section {
+  margin-top: 6.4rem;
+}
+
+.steps-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #0f2400;
+}
+
+.feature-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-img {
+  width: 90%;
+  border: none;
+  border-radius: 1.6rem;
+  box-shadow: .5rem 1rem 1.5rem rgba(158, 232, 112, 0.148);
 }
