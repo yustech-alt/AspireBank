@@ -217,5 +217,21 @@ body {
   width: 90%;
   border: none;
   border-radius: 1.6rem;
-  box-shadow: .5rem 1rem 1.5rem rgba(158, 232, 112, 0.148);
+  box-shadow: 0.5rem 1rem 1.5rem rgba(158, 232, 112, 0.148);
+}
+
+/****** why choose us ******/
+
+.why-us-section {
+  background-color: #163300;
+  padding: 3rem 4rem;
+}
+
+.text {
+  color: #fff;
+}
+
+.heading-tertiary-2 {
+  font-size: 2rem;
+  color: #fff;
 }
